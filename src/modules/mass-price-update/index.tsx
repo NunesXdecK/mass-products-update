@@ -150,6 +150,7 @@ function MassPriceUpdate() {
       if (res.status === "SUCCESS") {
         setKey(old => old + 1)
         setList([])
+        window.location.reload()
       }
     } catch (error) {
       console.error(error)
